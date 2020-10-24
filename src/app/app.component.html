@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-control (intervalFire)='llamada($event)'></app-game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-even  *ngFor="let item of impares" [number]="item"></app-even>
+    <app-odd  *ngFor="let item of pares" [numberP]="item"> </app-odd>
+  </div>
+</div>
+
+
+
